@@ -1,0 +1,156 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Landing Page styles */
+.landing-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.landing-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.landing-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.landing-container .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-container .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Todo List Page styles */
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838;
+}
+
+#modal {
+    display: none;
+}
+
+/* Dialog Box styles */
+.dialog-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dialog-input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dialog-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Decoration inside Dialog Box */
+.modal-content .dialog-decoration {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    color: #333;
+}
